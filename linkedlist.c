@@ -8,9 +8,7 @@ static Node* _head = NULL;
 static Node* _tail = NULL;
 static Node* _cur_node = NULL;
 
-
 bool empty(){
-
 	return _head==NULL;
 }
 
@@ -23,7 +21,6 @@ size_t size(){
 		ptr=ptr->next;
 		count++;
 	}
-
 	return count;
 }
 
@@ -89,7 +86,6 @@ Node* push( char new_data[])
 	}
 
 	_head = new_node;
-
 	return new_node;
 }
 
@@ -114,7 +110,6 @@ Node* append_left(Node* cur_node, char new_data[]){
 
 	if (new_node->prev != NULL)
 		new_node->prev->next = new_node;
-
 	return new_node ;
 }
 
@@ -134,7 +129,6 @@ Node* insert_after(Node* cur_node, char new_data[]){
 		new_node->next->prev = new_node;
 	else
 		_tail=new_node;
-
 	return new_node;
 }
 
@@ -151,7 +145,6 @@ Node* append(char new_data[]){
 		new_node->prev=_tail;
 		_tail=new_node;
 	}
-
 	return new_node;
 }
 
@@ -174,7 +167,6 @@ Node* delete_node(Node* cur_node){
 		_tail=prev;
 
 	free_node(cur_node);
-
 	return NULL;
 }
 
@@ -189,7 +181,6 @@ Node* delete1(char* data){
 		}
 		ptr=ptr->next;
 	}
-
 	return NULL;
 }
 
@@ -207,17 +198,14 @@ Node* get_node(size_t index){
 		ptr=ptr->next;
 		count++;
 	}
-
 	return ptr;
 }
 
 Node* first(){
-
 	return _head;
 }
 
 Node* last(){
-
 	return _tail;
 }
 
@@ -227,7 +215,6 @@ Node* next(){
 }
 
 Node* curr(){
-	
 	return _cur_node;
 }
 

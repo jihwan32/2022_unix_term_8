@@ -18,5 +18,3 @@ Node* first();
 Node* last();
 Node* next();
 Node* curr();
-
-
