@@ -5,5 +5,6 @@ struct Node {
 };
 typedef struct Node Node;
 
+
 Node *alloc_node(char data[]);
 void free_node(Node *node);

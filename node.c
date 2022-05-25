@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include "node.h"
 
+
 Node *alloc_node(char data[]){
 	struct Node* new_node
 		= (struct Node*)malloc(sizeof(struct Node));

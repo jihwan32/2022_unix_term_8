@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include "node.h"
+
 bool empty();
 size_t size();
 void print();
